@@ -30,7 +30,7 @@ public class PrintBarcode {
 		Barcode barcode = BarcodeFactory.createCode128B("Ivanov.Andriy_12.12.1980_operator"+i);
 
         try {
-            File f = new File("bars/mybarcode"+i+".png");
+            File f = new File("bars/mybarcode!"+i+".png");
             // Let the barcode image handler do the hard work
             BarcodeImageHandler.savePNG(barcode, f);
         } catch (Exception e) {
